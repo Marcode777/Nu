@@ -1,7 +1,7 @@
 
 const buttonz = (props) => {
     return (
-        <button name="buttonz">sample button</button>
+        <button name="buttonz" style={{ backgroundColor: 'blue' }}>sample button</button>
     );
 }
 
