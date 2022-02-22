@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import FirstNuComponent from './components/FirstNuComponent';
+import Button from './components/Button';
 
 function App() {
   return (
@@ -19,9 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
-      <body>
         <FirstNuComponent/>
-      </body>
+        <Button/>
     </div>
   );
 }
