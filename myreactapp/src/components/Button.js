@@ -1,8 +1,24 @@
+import React from 'react';
 
-const buttonz = (props) => {
-    return (
-        <button name="buttonz" style={{ backgroundColor: 'blue' }}>sample button</button>
-    );
+class Button extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            clicked: false
+        }
+    }
+    toggleClick(){
+        console.log('clicker triggered!');
+        this.setState({
+            clicked: !this.state.clicked
+        })
+    }
+    render() {
+        if(this.state.clicked) {
+            return 'Tuesday TWOsDAY because the date is February 22 2022, 2/22/22';
+        }
+        return <button onClick={()=> this.toggleClick()}>Button</button>
+    }
 }
 
-export default buttonz;
+export default Button;
