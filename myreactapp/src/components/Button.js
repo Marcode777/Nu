@@ -15,7 +15,7 @@ class Button extends React.Component {
     }
     render() {
         if(this.state.clicked) {
-            return 'Tuesday TWOsDAY because the date is February 22 2022, 2/22/22';
+            return <div>'Tuesday TWOsDAY because the date is February 22 2022, 2/22/22' <button onClick={()=> this.toggleClick()}>Button</button></div>
         }
         return <button onClick={()=> this.toggleClick()}>Button</button>
     }
